@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+<nav class="navbar bg-body-tertiary bg-warning-subtle text-warning-emphasis">
+    <div class="container-fluid ">
+        <a href="/" class="navbar-brand"><h1><strong>ISSUE TRACKER</strong></h1></a>
+        <div class="d-flex"> 
+            <% if (taitle === "Home") { %>
+                <%- include('_projectForm.ejs') %>
+            <% } else { %>
+                      
+                <%- include('_issueForm') %>
+           <%  } %>
+            
+        </div>
+    </div>
+</nav>

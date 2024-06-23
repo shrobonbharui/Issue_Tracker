@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="../assets/css/home.css">
+
+<ul id="list" class="me-4">
+    <% for(let project of projects){ %>
+        <li class="list-group-item my-3 p-2 border border-black rounded border-3">
+            <a href="/Project/<%= project._id %>"
+                class="list-group-item list-group-item-action container-fluid p-2 bg-warning-subtle bg-opacity-10 border border-black  rounded "
+                aria-current="true">
+                <div class="d-flex w-100 justify-content-between">
+                    <h4 class="me-4">
+                        <%= project.projectname %>
+                    </h4>
+                    <span>
+                        <small>
+                            <%= project.createdAt.toLocaleDateString() %>
+                        </small>
+                    </span>
+
+                </div>
+                <p class="mb-1">
+                    <strong>Author:-</strong>
+                    <%= project.author %>
+                </p>
+                <small>
+                    <strong>Description:-</strong>
+                    <%= project.description %>
+                </small>
+            </a>
+        </li>
+    <% } %>
+
+</ul>

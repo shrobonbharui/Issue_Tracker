@@ -1,0 +1,28 @@
+<div class="w-50 border border-secondary border-2 p-3 mx-auto my-3">
+  <div class="border border-dark border-2">
+    <div class="display-5 p-2 bg-secondary text-white">
+      <h3>
+        <%= project.projectname %>
+      </h3>
+    </div>
+    <div class="display-4 p-1 bg-warning-subtle text-dark">
+      <h4>
+        Author : <%= project.author %>
+      </h4>
+      <h5>
+        Description : <%= project.description %>
+      </h5>
+      <h6>
+        <strong>Date:- </strong>
+        <%= project.createdAt.toLocaleDateString() %>
+          <strong>Time:- </strong>
+          <%= project.createdAt.toLocaleTimeString() %>
+      </h6>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <a href="/Project/<%= project._id %>/Delete" class="btn btn-danger">Delete</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%-include('./partials/_issue.ejs'); %>
