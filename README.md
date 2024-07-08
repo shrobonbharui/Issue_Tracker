@@ -24,7 +24,7 @@ To install Issue_Tracker, please follow these steps:
 
 * Clone this repository using the following command:
 ```
-$ git clone (https://github.com/shrobonbharui/CSV_Upload.git)
+$ git clone (https://github.com/shrobonbharui/Issue_Tracker)
 ```
 * Install the required dependencies using the following command:
 ```
