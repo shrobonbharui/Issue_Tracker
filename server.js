@@ -30,6 +30,6 @@ app.listen(poart,(err)=>{
         console.log(`error in running server${err}`)
     }
     else{
-        console.log(`server is running${poart}`)
+        console.log(`server is running`)
     }
 });

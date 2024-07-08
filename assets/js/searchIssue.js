@@ -14,18 +14,21 @@ searchIssueForm.addEventListener('submit', function (e) {
   let searchedIssues = [];
 
   //get all the form data
-
   let titleValue = searchIssueForm.querySelector('input[name="tie"]').value;
   
+  let descriptionValue = searchIssueForm.querySelector('input[name="des"]').value;
+
 
   //add issue to searched issues array
   searchIssues.map((el) => {
-    if (el.taitle == titleValue) {
+    if (el.taitle == titleValue || el.description == descriptionValue) {
       if (!searchedIssues.includes(el)) {
         searchedIssues.push(el);
       }
     }
   });
+
+
   //create a div and add details of the searched issues
   searchList.innerHTML = '';
   for (let issue of searchedIssues) {
