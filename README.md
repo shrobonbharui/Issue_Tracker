@@ -8,7 +8,7 @@ Issue_Tracker is a Issue Detector Web Application.
 * Check the details of the project.
 * Create a new issue for the bug present in the project.
 * Filter the issues based on labels or Author Name.
-* Search Issues based on Issue title. 
+* Search Issues based on Issue title & description. 
 ## Tools Used
 * HTML
 * Ejs
